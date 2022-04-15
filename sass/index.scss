@@ -1,11 +1,11 @@
-@use 'reset';
-@use 'typography';
-@use 'layout';
-@use 'spacing';
-@use 'components';
-@use 'constants';
+  reset
+typography
+ layout
+ spacing
+ components
+ constants
 
-@import "colors";
+import colors
 
 body {
   position: relative;
