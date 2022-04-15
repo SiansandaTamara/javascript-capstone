@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Lato", sans-serif;
 }
 
 button {
@@ -8,13 +9,16 @@ button {
   border: none;
   background-color: transparent;
 }
+
 button:hover {
   cursor: pointer;
   opacity: 0.8;
 }
+
 button:active {
   opacity: 0.5;
 }
+
 article,
 aside,
 details,
@@ -42,13 +46,13 @@ li {
   src: url(../fonts/Cocogoose.otf);
   font-weight: bold;
 }
-* {
-  font-family: "Lato", sans-serif;
-}
 
 .logo {
   font-family: "Cocogoose", sans-serif;
+  color: #ec5242;
+  font-size: 20px;
 }
+
 .logo span {
   font-family: "Cocogoose", sans-serif;
 }
@@ -117,17 +121,19 @@ li {
   flex-direction: column;
   justify-content: center;
 }
+
 .headline .content {
   padding: 48px 24px;
 }
+
 .headline .content .title {
   background-image: url(../images/orange.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
+
 .headline .box {
   width: 100%;
   border-style: solid;
@@ -136,6 +142,7 @@ li {
   border-width: 3px;
   border-color: white;
 }
+
 @media screen and (min-width: 768px) {
   .headline {
     background-image: url(../images/main_big.png);
@@ -143,6 +150,7 @@ li {
     padding: 0 10%;
     margin: 12px 0;
   }
+
   .headline .content {
     width: 60%;
   }
@@ -155,6 +163,7 @@ li {
   display: flex;
   flex-direction: column;
 }
+
 .main-program .program-list {
   display: grid;
   grid-template-columns: 100%;
@@ -162,9 +171,11 @@ li {
   gap: 12px;
   margin: 16px 0;
 }
+
 .main-program .program-list li {
   display: flex;
 }
+
 .main-program .program-list .program-item {
   display: grid;
   grid-template-columns: 24px 100px auto;
@@ -174,43 +185,57 @@ li {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 16px;
 }
+
 .main-program .program-list .program-item:hover {
   cursor: pointer;
   box-sizing: border-box;
   border: 1px solid white;
 }
+
+.button-outline i {
+  margin-left: 8px;
+}
+
 .main-program .program-list .program-item i {
   font-size: 24px;
 }
+
 .main-program .program-list .program-item .program-title {
   font-weight: 600;
 }
+
 .main-program .program-list .program-item .program-description {
   font-size: 14px;
 }
+
 .main-program .see-all-button {
   display: none;
 }
+
 @media screen and (min-width: 768px) {
   .main-program {
     padding: 4% 10%;
     align-items: center;
     justify-content: center;
   }
+
   .main-program .program-list {
     margin: 16px 12px;
     grid-template-columns: repeat(5, minmax(0, 1fr));
     justify-content: center;
   }
+
   .main-program .program-list .program-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+
   .main-program .join-button {
     display: none;
   }
+
   .main-program .see-all-button {
     display: block;
     font-size: 14px;
@@ -224,6 +249,7 @@ li {
   display: flex;
   flex-direction: column;
 }
+
 .featured-speakers .speakers-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -231,29 +257,36 @@ li {
   margin: 24px 0 48px 0;
   gap: 20px;
 }
+
 .featured-speakers .speakers-list article {
   display: flex;
 }
+
 .featured-speakers .speakers-list .speaker-item {
   display: flex;
   gap: 20px;
 }
+
 .featured-speakers .speakers-list .speaker-item .profile-image {
   height: 100px;
   width: 100px;
 }
+
 @media screen and (min-width: 768px) {
   .featured-speakers {
     align-items: center;
   }
+
   .featured-speakers .speakers-list {
     grid-template-columns: 50% 50%;
     grid-row-gap: 48px;
     width: 80%;
   }
+
   .featured-speakers .speakers-list .speaker-item {
     width: 100%;
   }
+
   .featured-speakers .speakers-list .speaker-item .profile-image {
     height: 120px;
     width: 120px;
@@ -268,11 +301,13 @@ li {
   flex-direction: column;
   align-items: center;
 }
+
 .about .about-age .content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .about .about-age .box {
   width: 100%;
   border-style: solid;
@@ -281,30 +316,36 @@ li {
   border-width: 1px;
   margin: 40px;
 }
+
 @media screen and (min-width: 768px) {
   .about .about-age {
     height: 100vh;
     justify-content: center;
   }
+
   .about .about-age .content {
     width: 50%;
   }
 }
+
 .about aside {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px;
 }
+
 .about .about-logo {
   border-bottom-width: 2px;
   border-bottom-style: solid;
 }
+
 .about .about-logo .content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .about .about-logo .box {
   display: flex;
   justify-content: center;
@@ -315,48 +356,58 @@ li {
   border-width: 1px;
   margin-top: 40px;
 }
+
 @media screen and (min-width: 768px) {
   .about .about-logo .box {
     width: 50%;
   }
+
   .about .about-logo .content {
     width: 50%;
   }
 }
+
 .about .past-conf .content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .about .past-conf .card-list {
   display: flex;
   flex-direction: column;
   padding: 24px 12px;
   gap: 20px;
 }
+
 .about .past-conf .card-list .card {
   position: relative;
   text-align: center;
 }
+
 .about .past-conf .card-list .card .card-image {
   opacity: 0.48;
   height: 100%;
   width: 100%;
   mix-blend-mode: multiply;
 }
+
 .about .past-conf .card-list .card .card-body {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 @media screen and (min-width: 768px) {
   .about .past-conf .content {
     width: 50%;
   }
+
   .about .past-conf .card-list {
     flex-direction: row;
   }
+
   .about .past-conf .card-list .card {
     width: 100%;
   }
@@ -368,6 +419,7 @@ li {
   flex-direction: column;
   justify-content: center;
 }
+
 .partners .logos {
   margin-top: 20px;
   display: flex;
@@ -376,13 +428,16 @@ li {
   align-items: center;
   gap: 40px;
 }
+
 .partners .logos .partner {
   filter: grayscale(100%) contrast(30%);
   height: 30px;
 }
+
 .partners .logos .partner:hover {
   filter: none;
 }
+
 @media screen and (min-width: 768px) {
   .partners .logos {
     flex-direction: row;
@@ -455,9 +510,6 @@ li {
   box-sizing: border-box;
   border-radius: 4px;
 }
-.button-outline i {
-  margin-left: 8px;
-}
 
 .join-nav-button {
   box-sizing: border-box;
@@ -516,6 +568,7 @@ li {
     background-color: #272a31;
   }
 }
+
 .bd-primary {
   border-color: #ec5242;
 }
@@ -537,10 +590,10 @@ body {
   background-color: #f7f7f9;
 }
 
-.logo {
+/* .logo {
   color: #ec5242;
   font-size: 20px;
-}
+} */
 
 .navbar-toggler {
   width: 48px;
@@ -556,14 +609,17 @@ body {
   z-index: 2;
   background-color: transparent;
 }
+
 .appbar .small-bar {
   display: none;
 }
+
 @media screen and (min-width: 768px) {
   .appbar {
     background-color: #f7f7f9;
     filter: drop-shadow(0 0 16px rgba(64, 83, 252, 0.24));
   }
+
   .appbar .small-bar {
     display: flex;
     justify-content: flex-end;
@@ -571,19 +627,23 @@ body {
     padding: 8px 10%;
     gap: 40px;
   }
+
   .appbar .small-bar button {
     color: white;
   }
+
   .appbar .small-bar .social-icons {
     display: flex;
     gap: 20px;
   }
+
   .appbar .small-bar .bar-actions {
     display: flex;
     align-items: center;
     gap: 40px;
   }
 }
+
 .appbar .navbar {
   min-height: 48px;
   padding: 0 12px;
@@ -591,23 +651,29 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .appbar .navbar .navbar-brand {
   display: none;
 }
+
 .appbar .navbar .navbar-nav {
   display: none;
   gap: 40px;
 }
+
 @media screen and (min-width: 768px) {
   .appbar .navbar {
     padding: 0 10%;
   }
+
   .appbar .navbar .navbar-brand {
     display: block;
   }
+
   .appbar .navbar .navbar-toggler {
     display: none;
   }
+
   .appbar .navbar .navbar-nav {
     display: flex;
   }
@@ -622,16 +688,19 @@ body {
   opacity: 0.7;
   z-index: 9999;
 }
+
 .menu .menu-header {
   height: 48px;
   padding: 0 12px;
 }
+
 .menu .menu-nav {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 24px;
 }
+
 .menu .menu-nav .nav-link {
   font-weight: 600;
 }
@@ -647,5 +716,4 @@ body {
 .turn-off-scroll {
   overflow: hidden;
 }
-
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=index.css.map*/
