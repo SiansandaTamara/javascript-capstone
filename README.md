@@ -14,7 +14,7 @@
 - Figma Tempalate
 ## Live Demo (if available)
 
-[Live Demo Link](https://siansandatamara.github.io/1-capstone/)
+[Live Demo Link]( https://siansandatamara.github.io/javascript-capstone/)
 
 ## Getting Started
 
